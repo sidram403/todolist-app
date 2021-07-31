@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+/* ------------ container ------------ */
+.container {
+    /*padding: 10px;
+    width: 380px;
+    margin: 0 auto;
+*/
+    position: relative;
+    width: 360px;
+    height: 600px;
+    background-color: #121212;
+    border-radius: 40px;
+
+}
+.screen{
+    position: absolute;
+    right: 10px;
+    left: 10px;
+    top: 40px;
+    bottom: 40px;
+    
+    background-color: #000;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+/* ------------ header ------------ */
+.header {
+    /*margin-top: 45px;*/
+    width: 350px;
+    height: 150px;
+    background-image: url('../img/bg5.jpg');
+    /*background-size: 100% 200%;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.clear {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+
+}
+
+.clear i {
+    font-size: 40px;
+    color: #03a9f4;
+}
+
+.clear i:hover {
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+
+#date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #f9f9f9;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* ------------ content ------------ */
+.content {
+    width: 350px;
+    height: 310px;
+    max-height: 350px;
+    background-color: #FFF;
+    overflow: scroll;
+    
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.content ul {
+    padding: 0;
+    margin: 0;
+    color: #0c6d05;
+    font-weight: bold;
+    background-color: aliceblue;
+    
+    
+}
+
+
+
+.item {
+    width: 350px;
+    height: 45px;
+    min-height: 50px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item i.co {
+    position: absolute;
+    font-size: 25px;
+    padding: 0px;
+    left: 15px;
+    top: 10px;
+}
+
+.item i.co:hover {
+    cursor: pointer;
+}
+
+.fa-check-circle {
+    color: #dd830e;
+}
+
+.item p.text {
+    position: absolute;
+    padding: 0;
+    margin: 8px;
+    font-size: 20px;
+    left: 50px;
+    top: 5px;
+    background-color: #FFF;
+    max-width: 285px;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.item i.de {
+    position: absolute;
+    font-size: 25px;
+    right: 15px;
+    top: 10px;
+}
+
+.item i.de:hover {
+    color: #af0000;
+    cursor: pointer;
+}
+/*.iconc{
+    color: red;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 0;
+}*/
+.icona{
+    color: red;
+    margin-top: 13px;
+    margin-left: 45%;
+    color: #948c8c;
+}
+.iconb{
+    color: #948c8c;
+    margin-top: 530px;
+    margin-left: 45%;
+    font-size: 35px;
+}
+
+/* ------------ add item ------------ */
+.add-to-do {
+    position: relative;
+    width: 360px;
+    height: 40px;
+    background-color: #d0bdbd;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    
+
+}
+
+.add-to-do i {
+    position: absolute;
+    font-size: 40px;
+    color: #4162f6;
+}
+
+.add-to-do input {
+    position: absolute;
+    left: 50px;
+    height: 35px;
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: #d4bdbd;
+
+
+
+}
+
+
+.add-to-do input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+.add-to-do input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+.add-to-do input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
+.add-to-do input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #4162f6;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+
